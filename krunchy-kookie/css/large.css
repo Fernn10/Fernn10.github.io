@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 1200px) {
    header, nav, footer, main {
     max-width: 75rem;
     margin: auto;
