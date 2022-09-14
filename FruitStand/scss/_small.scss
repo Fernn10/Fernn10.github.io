@@ -45,7 +45,7 @@ header {
 #navWrapper {background-color: lighten($primaryColor, 26%)}
 nav {
     ul li a {
-        color: $secondaryColor;
+        color: darken($secondaryColor, 5%);
         text-decoration: none;
         display: flex;
         justify-content: right;
