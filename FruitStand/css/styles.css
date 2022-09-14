@@ -155,6 +155,7 @@ nav ul li a {
   justify-content: right;
   padding: 1rem 2vw;
   border-top: solid 1px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
 }
 nav ul li a:hover {
   background-color: #90c793;
@@ -197,6 +198,7 @@ div.fruitGallery figure img {
 
 div.fruitGallery figcaption {
   text-align: center;
+  font-weight: 600;
 }
 
 /* FOOTER  */
