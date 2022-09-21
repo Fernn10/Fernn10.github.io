@@ -1,0 +1,40 @@
+header, nav, main, footer {
+        max-width: 60rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+        background-image: url(../images/header-assets/header-large.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position: center left;
+    
+        
+    }
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+        button {display: none;}
+        ul, ul.open {
+                border: none;
+                display: flex;
+                justify-content: right;
+        } //end of ul
+        ul li {border: none; }
+}//end nav
+
+
+/*----------- MAIN --------------*/
+main {
+        .card{flex-basis: 31.33%;}
+    }
+
+
+/*----------- FOOTER --------------*/
+    

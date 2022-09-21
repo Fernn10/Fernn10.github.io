@@ -1,0 +1,41 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+header {
+    background-image: url(../images/header-assets/header-medium.jpg);
+    height: 240px;
+}
+
+div.topbar {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 1vw;
+    
+}
+
+header p{
+    font-size: 10px;
+    align-items: center;
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+main {
+    .card{flex-basis: 48%;}
+}
+
+
+/*----------- FOOTER --------------*/
+    

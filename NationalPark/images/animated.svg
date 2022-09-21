@@ -1,0 +1,26 @@
+<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+ <line x1="5" y1="3"
+x2="17" y2="3"
+
+stroke-width="3"
+
+/>
+<rect x="1" y="1" width="20" height="20" fill="none" stroke="#000" stroke-width="2">
+<animate attributeName="rx" values="0;5;0" dur="3s" repeatCount="indefinite"/>
+
+</rect>
+
+
+
+<circle cx="11" cy="11"
+r="10"
+fill="green"
+stroke="#000"
+stroke-width="2"
+>
+
+<animate attributeName="fill" values="green;black;green" dur="5s" repeatCount="indefinite"/>
+</circle>
+
+
+</svg>

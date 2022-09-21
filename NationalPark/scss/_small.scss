@@ -1,0 +1,152 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+
+
+
+
+div.topbar {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2vw;
+    max-width: 60rem;
+    margin: auto;
+}
+
+header {
+    background-image: url(../images/header-assets/header-small.jpg);
+    height: 140px;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+header h1 {
+   background-color: rgba(0, 0, 0,0.4) ;
+    padding: 1rem 2vw;
+    font-size: 1.4rem;
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: rgb(218, 64, 17);
+    button {
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+    }//end button
+}//end nav
+nav ul {
+    border-bottom: solid 1px white;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+
+    display: none;
+}
+
+ul.open {
+    display: block;
+}
+
+
+nav ul li {
+    border-bottom: solid 1px white;
+
+}
+nav ul li a {
+    display: block;
+    background-color: rgb(218, 80, 38);
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .9rem 2vw;
+    text-decoration: none;
+    font-size: .9rem;
+    
+}
+
+
+nav ul li a:hover {
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    $cbr: 10px;
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        flex-basis: 100%;
+        border: 1px solid #999;
+        border-radius: $cbr;
+        margin: 1rem 1%;
+        text-align: center;
+        section {
+            background-color: rgb(218, 64, 17);
+            color: rgb(228, 228, 228);
+            padding: 1rem 0;
+            border-top-left-radius: $cbr - 1;
+            border-top-right-radius: $cbr - 1;
+        } //end of the section
+        img {
+
+            padding-top: 1rem;
+        }//end of image
+        p {
+            padding: 1rem 2vw;
+        }
+        a{
+            display: block;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 1rem 0;
+            margin: 1rem 4vw;
+            border-radius: $cbr;
+        }
+        a:hover{background-color: lighten(rgb(218, 64, 17), 10%);}
+    } //end of card
+
+} 
+
+
+/*----------- FOOTER --------------*/
+
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: .5rem 2%;
+    text-align: center;
+    color: white;
+}
+
