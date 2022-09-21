@@ -327,7 +327,7 @@ body {
 
 /*----------- HEADER --------------*/
 div.topbar {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
@@ -424,10 +424,10 @@ main .card section {
   border-top-right-radius: 9px;
 }
 main .card img {
-  padding-top: 1rem;
+  padding: 2rem 5vw;
 }
 main .card p {
-  padding: 1rem 2vw;
+  padding: 2rem 1vw;
 }
 main .card a {
   display: block;
