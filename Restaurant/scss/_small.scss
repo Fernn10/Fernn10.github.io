@@ -106,14 +106,8 @@ nav ul li.active a {
     color: #fff;
 } // end of the nav
 
-.heroImage {
-    background-image: url(../images/tableHeader-assets/table-small.jpg);
-    height: 140px;
-    background-position: center;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.heroTable img{
+    width: 100%;
 
 }
 
