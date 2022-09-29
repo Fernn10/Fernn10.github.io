@@ -1,0 +1,164 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* HEADER  */
+
+
+
+header {
+  
+    display: grid;
+    grid-template-columns: 51px auto;
+    align-items: center;
+	padding: .5rem 2vw;
+    grid-template-columns: 105px auto;
+	h1 {
+        font-size: 2rem;
+        font-weight: $normalWeight;
+        padding-top: 0;
+        padding-left: 0;
+        color: $primaryColor;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: $lightWeight;
+        padding-top: .5rem;
+        padding-left: 0;
+        color: $primaryColor;
+    }
+
+} // end header
+
+header figure.logo{
+    float: left;
+    margin: 0;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+#navWrapper {background-color: $primaryColor}
+nav {
+    background-color: #373bd0;
+    button {
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    button span:nth-child(1){display: block;}
+    button span:nth-child(2) {display: none;}
+    button.open span:nth-child(1) {display: none;}
+    button.open span:nth-child(2) {display: block;}
+    
+
+    //end button
+}//end nav
+nav ul {
+    border-bottom: solid 1px white;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+
+    display: none;
+}
+
+ul.open {
+    display: block;
+}
+
+
+nav ul li {
+    border-bottom: solid 1px white;
+
+}
+nav ul li a {
+    display: block;
+    background-color: #272aaf;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .9rem 2vw;
+    text-decoration: none;
+    font-size: .9rem;
+    
+}
+
+
+nav ul li a:hover {
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+} // end of the nav
+
+.heroImage {
+    background-image: url(../images/tableHeader-assets/table-small.jpg);
+    height: 140px;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+
+/* MAIN  */
+main {
+ 	p {padding: .2rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 2vw .5rem 5.5vw; 
+        padding-bottom: 5px;
+        font-size: 1.5rem; 
+        color: black;
+        font-weight: $normalWeight;
+        margin: 0;
+    }
+
+} // end main
+
+.myphoto {
+    display: block;
+    float: right;
+    width: 50%;
+    padding: 2vw .5rem 5.5vw;
+}
+
+picture{
+    margin: 0;
+    width: 100%;
+    img {width: 100%;}
+    } //ends figure
+    figcaption {text-align: center; font-size: .8rem;} 
+
+
+/* FOOTER  */
+#footerWrapper {background-color: #272aaf;}
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

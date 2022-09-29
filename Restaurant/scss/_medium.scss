@@ -1,0 +1,47 @@
+//body
+body {
+	
+	font-size: 23px;
+
+}
+
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    button {display: none;}
+    ul, ul.open {
+            border: none;
+            display: flex;
+            justify-content: left;
+    } //end of ul
+    ul li {border: none; }
+} // end of nav
+
+/*hero image stuff*/
+.heroImage {
+    background-image: url(../images/tableHeader-assets/table-medium.jpg);
+    height: 140px;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+//end of hero image
+
+//main
+
+
+main h1 {
+    font-size: 2.5rem; 
+}
+
+main p {
+    padding-bottom: 10px;
+    padding-left: 1rem;
+}
+
+div.fruitGallery figcaption {
+    font-size: 15px;
+}
