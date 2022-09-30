@@ -212,7 +212,9 @@ nav ul li.active a {
   color: #fff;
 }
 
-.heroTable img {
+.hImage {
+  display: block;
+  float: center;
   width: 100%;
 }
 
