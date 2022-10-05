@@ -182,13 +182,15 @@ main p {
   padding: 0.5rem 2vw;
   color: #333;
   line-height: 125%;
+  font-weight: 600;
+  font-size: 14px;
 }
 main h1, main h2 {
   background-color: #333;
   padding: 1rem 2vw 0.5rem 2vw;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: white;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .bandMembers {
@@ -199,7 +201,7 @@ main h1, main h2 {
 
 span {
   font-size: large;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .bandMembers figure {

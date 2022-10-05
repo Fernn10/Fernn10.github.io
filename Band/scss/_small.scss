@@ -78,13 +78,16 @@ nav {
 
 /* MAIN  */
 main {
- 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;
+    font-weight:$normalWeight;
+    font-size: 14px;
+    }
 	h1, h2 {
         background-color: #333;
         padding: 1rem 2vw .5rem 2vw; 
-        font-size: 1.5rem; 
+        font-size: 1.7rem; 
         color: white;
-        font-weight: $lightWeight
+        font-weight: $normalWeight;
     }
 } // end main
 
@@ -97,7 +100,7 @@ main {
 
 span {
     font-size: large;
-    font-weight: bold;
+    font-weight: $normalWeight;
 }
 
 .bandMembers figure {
