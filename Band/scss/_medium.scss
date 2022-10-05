@@ -1,0 +1,18 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav ul {
+    width: 200px;
+}
+
+
+.bandMembers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.bandMembers figure {
+    flex-basis: 42%;
+    margin: 1rem 2%;
+}

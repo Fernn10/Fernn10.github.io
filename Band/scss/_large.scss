@@ -1,0 +1,50 @@
+header, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+header {
+    grid-template-columns: 51px auto auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    button{display: none;}
+    justify-self: end;
+    ul, ul.open {
+        position: relative;
+        display: flex;
+        background-color: transparent;
+        width: auto;
+    }
+ 
+    ul li {
+        border: none;
+    }
+ 
+    ul li a{
+        color: #333;
+        border-radius:  20px;
+        padding: .5rem 1rem;
+        margin-left: .2rem;
+        transition: all .5s ease;
+    }
+
+    ul li a:hover {
+        background-color: rgb(180, 180, 180);
+        color: #333!important;
+    }
+    ul li.active a {
+        color: white;
+    }
+}
+
+.bandMembers figure {
+    flex-basis: 21%;
+    margin: 1rem 1%;
+}
+
+span {
+    font-size: large;
+    font-weight: bold;
+}
