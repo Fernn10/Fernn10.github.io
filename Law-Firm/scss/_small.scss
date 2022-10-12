@@ -1,0 +1,270 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    display: grid;
+    font-size: 16px;
+    font-weight: $normalWeight;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {grid-row-start: 1;}
+header {
+    display: grid;
+    grid-template-columns: 51px auto 44px;
+    align-items: center;
+    padding: .5rem 2vw;
+    div#phone{display: none;}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: $boldWeight;
+    padding-left: 1.8rem;
+    color: black;
+}
+
+img {
+    padding-top: 24px;
+}
+
+}
+
+h3 {
+    padding-top: 10px;
+    color: white;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: smaller;
+    text-align: center;
+    background-color: #1261A0;
+    
+    
+}
+
+
+/*----------- NAVIGATION --------------*/
+
+
+div#navWrapper {grid-row-start: 4;}
+div#hamburger a, div#closex a {
+    display: block;
+    padding: .8rem 2vw;
+    font-size: 1.5rem;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+    text-align: right;
+} //end nav buttons
+
+div#closex a {margin-right: 2vw;
+}
+
+nav {
+    height: 100vh;
+    background-color: $primaryColor;
+
+    ul {border-bottom: 1px solid #eee; list-style: none;}
+    ul li {border-top: 1px solid #eee;}
+    ul li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: .9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }
+    ul li a:hover {color: rgb(170, 164, 164);}
+    ul li.active a {background-color: rgb(104, 104, 104);}
+}
+
+/*----------- MAIN --------------*/
+div#mainWrapper {grid-row-start: 2;}
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    background-color: #ecf3f8;
+
+/*----------- Columns --------------*/
+    div.flexed {display: flex; flex-wrap: wrap;}
+    .column { padding: 10px $gutter;}
+    @for $i from 0 through 12 {
+        $w: ($i / 12) * 100%;
+        .small-#{$i} {flex-basis: $w;}
+    } //end loop
+
+    .callToAction {
+        justify-content: center;
+        text-align: center;
+        background-color: #ecf3f8;
+    }
+
+    .callToAction a:hover {
+        color: rgb(177, 177, 177);
+    }
+
+    .blog {
+        justify-content: center;
+        text-align: center;
+        
+    
+        p {
+            display: block;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 2rem 1rem;
+            margin: 0 0;
+        }
+        img{
+            padding: 0;
+        }
+    
+
+    }
+    .learnMore {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        padding: .5rem 0;
+        margin: .5rem 15px 10px 15px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: small;
+        a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    }
+    .learnMore a:hover{
+        color: rgb(121, 121, 121);
+        }
+    
+
+
+    .readMore {
+        display: block;
+        background-color: $primaryColor;
+        
+        padding: 1rem 0;
+       
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+    }
+.readMore a:hover{
+    color: rgb(177, 177, 177);
+}
+
+
+
+    .readMoreTip a{
+        color: #333;
+    }
+
+    .readMoreTip a:hover {
+        color: rgb(126, 126, 126);
+    }
+    
+    
+
+
+     .callItems a{
+        display: block;
+        background-color: $primaryColor;
+        color: white;
+        padding: 2rem 1rem;
+       
+        border-radius: 1px;
+        text-align: center;
+        text-decoration: none;
+     }
+
+     .Attorneys{
+        background-color: #ecf3f8;
+     }
+    .tipsOne{
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 10px 10px;
+
+    }
+
+    .tipsDay{
+        display: block;
+        justify-content: end;
+    }
+
+    
+    }
+
+
+.imgWrap{
+
+    background-color: #1261A0;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 100%;
+    padding-bottom: 20px;
+    display: block;
+    color: white;
+
+    
+}
+
+
+
+
+/*----------- FOOTER --------------*/
+#footerWrapper {
+    grid-row-start: 3;
+}
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+div.social {
+    background-color: $primaryColor;
+    display: flex;
+    padding: 0;
+    
+}
+
+div.social a{
+    flex-basis: 25%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+div.social a:hover {
+    color: orange;
+}
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
