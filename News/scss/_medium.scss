@@ -1,0 +1,78 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav button {display: none;}
+#primaryNav {display: flex;}
+nav {
+
+    ul {
+        margin-left: 2%;
+        border-left: 1px solid rgba(255,255,255,0.1);
+    }
+    ul li {
+        border-right: 1px solid rgba(255,255,255,0.1);
+    }
+
+    ul li a {
+        //display: block:
+        border:none; //undo small screen top border
+        font-size: 1rem;
+        padding: .9rem 1.2rem;
+        color: rgba(255,255,255,1);
+        text-decoration: none;
+//transition
+        -webkit-transition: background 0.3s linear;
+        transition: background 0.3s linear;
+    }
+    ul li a:hover {background: rgba(97, 97, 97, 0.5);}
+}// end nav
+
+//main
+
+main {
+
+    .mainGrid {
+        grid-template-columns: 1fr 1fr 1fr;}
+    span {
+        font-size: 1rem;
+    }    
+    .lead {grid-column: 1 / span 3;}
+}
+
+//footer 
+#footerWrapper {background-color: #1b1b1b; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    font-size: 1.1rem; 
+	
+	color: white;
+	
+
+
+
+
+    a{
+        color: rgb(116, 116, 116);
+        text-decoration: none;
+        font-size: small; 
+        padding-top: 10px;  
+           
+    }
+
+    ul {
+        list-style: none;
+        padding-top: 10px;  
+        justify-self: left;
+        padding-left: 80px;  
+    }
+
+
+}

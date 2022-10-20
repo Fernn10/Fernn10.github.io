@@ -1,0 +1,64 @@
+header, nav, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+//main
+
+main {
+
+.mainGrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .lead{
+        grid-column: 1/ span 3;
+        grid-row: 1/ span 2;
+    }
+}
+
+}
+
+
+// Footer 
+#footerWrapper {background-color: #1b1b1b; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    font-size: 1.1rem; 
+	padding: 2rem 1rem 6rem 1rem;
+	color: white;
+	justify-self: center;
+
+
+    p {
+        justify-self: center;
+        padding-left: 10;
+    }
+
+    a{
+        color: rgb(116, 116, 116);
+        text-decoration: none;
+        font-size: small; 
+        padding-top: 10px;       
+    }
+
+    ul {
+        list-style: none;
+        padding-top: 10px;  
+        justify-self: center;
+        padding-left: 0;
+    }
+
+
+}
