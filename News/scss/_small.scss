@@ -67,7 +67,7 @@ nav {
         padding: 0;
 
     }
-    ul li.active a{ background-color: rgba(5, 5, 5, 0.25);}
+    ul li.active a{ background-color: rgba(145, 145, 145, 0.25);}
     ul li a{
         display: block;
         padding: .75rem 2vw;
@@ -79,7 +79,7 @@ nav {
     }
 
     ul li a:hover {
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(124, 124, 124, 0.5);
     }
     ul.open {display: block;}
 
@@ -99,6 +99,11 @@ main {
         display: block;
         text-align: center;
         font-size: .75rem;
+    }
+
+    span:hover{
+        cursor: pointer;
+        color: rgb(126, 126, 126);
     }
 
     .teaser, .lead {padding:.5rem 2vw}
@@ -141,7 +146,9 @@ footer {
         font-size: small; 
         padding-top: 10px;       
         padding-left: 10px; 
+    
     }
+
 
     ul {
         list-style: none;
