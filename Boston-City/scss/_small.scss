@@ -1,0 +1,184 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* HEADER  */
+header {
+
+    display: block;
+    grid-template-columns: 51px auto;
+    align-items: center;
+	padding: .5rem 2vw;
+    background-image: url(../images/bostonHeader.jpg);
+
+    h1 {
+        font-size: 3.6rem;
+        font-weight: $normalWeight;
+        padding-left: .5rem;
+        padding-bottom: 10px;
+        color: $primaryColor;
+        
+    }
+    h2 {
+        font-size: 1.6rem;
+        font-weight: $normalWeight;
+        padding-left: .5rem;
+        color: $primaryColor;
+    }
+
+
+
+
+} // end header
+
+
+
+
+
+
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    background-color: black;
+}
+
+
+
+/* MAIN  */
+main {
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $primaryColor;
+        font-weight: $normalWeight
+    }
+
+}
+
+
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+main div.cards div {
+    text-align: center;
+    flex-basis: 100%;
+    
+    
+
+// enter backround images here
+
+}
+
+
+main div.cards div:nth-child(1) {
+    background-image: url("../images/placetoStay.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: rgb(250, 160, 160);
+   
+
+}
+
+main div.cards div:nth-child(2) {
+    background-image: url("../images/walkTheRedLine.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: rgb(143, 133, 235);
+    
+}
+
+main div.cards div:nth-child(3) {
+    background-image: url("../images/cityPass.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: rgb(128, 240, 147);
+}
+
+main div.cards div:nth-child(4) {
+    background-image: url("../images/fineDining.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: rgb(217, 247, 159);
+}
+
+
+
+main div.cards div a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    transition: all .5s ease-in;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    background-color: none;
+}
+
+main div.cards div:nth-child(1) a{
+    background-color: rgb(250, 160, 160);
+}
+
+div.cards div:nth-child(2) a{
+    background-color: rgb(143, 133, 235);
+    
+}
+
+div.cards div:nth-child(3) a{
+    background-color: rgb(128, 240, 147);
+    
+}
+
+div.cards div:nth-child(4) a{
+    background-color: rgb(217, 247, 159);
+    
+}
+div.cards a:hover {
+    background-color: none;
+    text-shadow: 0 0 4px black;
+}
+
+main div.cards div a:hover {
+    background-color: transparent;
+    text-shadow: 0 0 4px rgb(201, 201, 201);
+}
+
+main div.cards a img {
+    padding: 4rem 0 0 0;
+}
+
+main div.cards a h3 {
+    font-size: 1.2rem;
+
+}
+
+
+
+
+/* FOOTER  */
+#footerWrapper {background-color: $primaryColor; }
+footer {
+    font-size: .85rem;
+    margin-top: 20px;
+	padding: 1rem 10px;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+}

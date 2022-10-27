@@ -1,0 +1,16 @@
+header, nav, main, body {
+    max-width: 1240px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav ul li a {
+    font-size: .9rem;
+    padding: .5rem 1.2rem;
+}
+
+//cards
+main div.cards div {
+    align-items: center;
+    flex-basis: 25%;
+}
