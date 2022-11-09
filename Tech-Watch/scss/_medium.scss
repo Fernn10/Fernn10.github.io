@@ -1,0 +1,63 @@
+div#pageWrapper {
+    
+    grid-template-areas: 
+        "header header"
+        "navigation content"
+        "footer footer";
+    grid-template-columns: 150px auto;
+    }
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+a.myjump {display: none;}
+
+nav {
+    height: auto;
+}
+
+
+
+/*----------- MAIN --------------*/
+
+
+main {
+
+    h1 {font-size: 35px;}
+    
+}
+
+figure.firstImage {
+    padding-top: 5px;
+    padding-bottom: 45px;
+   
+    img {
+           padding-top:5px;
+    }
+   
+   
+   }
+
+   figure.secondImage {
+    padding-top: 1px;
+    padding-bottom: 60px;
+    img {
+           padding-top:5px;
+    }
+   
+   }
+   
+   figure.thirdImage {
+    padding-top: 5px;
+    padding-bottom: 60px;
+   }
+
+/*----------- FOOTER --------------*/
+    
