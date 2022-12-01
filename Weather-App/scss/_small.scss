@@ -1,0 +1,106 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    color: white;
+    border-bottom: 3px white solid;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+    h2{
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+
+
+div {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-color: rgb(231, 231, 231);
+
+    p {
+        display: flex;
+        justify-content: center;
+        color: rgb(10, 10, 10);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+
+
+    span {
+        display: flex;
+        justify-content: center;
+        background-color: #0093E9;
+        padding: 10px;
+        margin: -10px;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+}
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
