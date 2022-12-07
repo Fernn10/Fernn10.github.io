@@ -1,0 +1,388 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+    background-color: #f4f4f4;
+}
+
+
+/* HEADER  */
+
+
+
+header {
+    
+    display: grid;
+    grid-template-columns: 51px auto;
+    align-items: center;
+	padding-top: .5rem;
+    grid-template-columns: 105px auto;
+    padding-right: 10px;
+	h1 {
+        font-size: 2.5rem;
+        font-weight: $normalWeight;
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 0px;
+        color: $primaryColor;
+        
+    }
+    h2 {
+        font-size: 1rem;
+        font-weight: $lightWeight;
+        padding-top: 0rem;
+        padding-left: 0;
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 18px;
+        border-bottom: 1px solid gray;
+    }
+
+
+
+} // end header
+
+header figure.logo{
+    float: left;
+    margin: 0;
+    
+}
+figure.logo {
+    padding-left: 10px;
+}
+
+.hImage{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+#navWrapper {
+    display: flex;
+    background-color: transparent;
+    justify-content: right;
+}
+
+
+
+
+
+nav {
+    background-color: transparent;
+    button {
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+    }
+    
+    button span:nth-child(1){display: block;}
+    button span:nth-child(2) {display: none;}
+    button.open span:nth-child(1) {display: none;}
+    button.open span:nth-child(2) {display: block;}
+    
+
+    //end button
+}//end nav
+nav ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+
+    display: none;
+}
+
+ul.open {
+    display: block;
+}
+
+
+
+nav ul li a {
+    display: block;
+    background-color: transparent;
+    color: gray;
+    padding: .2rem 0vw;
+    text-decoration: none;
+    font-size: .9rem;
+    
+}
+
+
+nav ul li a:hover {
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+} // end of the nav
+
+.hImage{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+#navWrapper img {
+    display: none;
+    
+}
+
+
+/* MAIN  */
+main {
+    
+ 	p {padding: 0rem 0rem 2vw; color: rgb(255, 255, 255); line-height: 125%;}
+	h1 {
+        padding: 2vw .5rem 5.5vw; 
+        padding-bottom: 5px;
+        font-size: 10px; 
+        color: black;
+        font-weight: $normalWeight;
+        margin: 0;
+    }
+
+
+
+} // end main
+
+
+
+
+#mainWrapper {
+display: flex;
+justify-content: center;
+padding-bottom: 50px;
+    margin-top: 15px;
+    background-color: #111118;
+    font-size: 13px;
+    
+    h1 {
+        font-size: 26px;
+        padding-left: 12px;
+        color: #fdd831;
+    }
+
+
+}
+
+
+
+.theBest{
+max-width: 1100px;
+    ul {
+        padding-top: 10px;
+        font-size: 15px;
+        padding-left: 3rem;
+        color: white;
+    }
+    
+    p {
+        padding-left: 14px;
+    }
+}
+
+.formula{
+    text-align: left;
+    padding-top: 30px;
+    h1 {
+        padding-right: 0px;
+    }
+
+    h2{
+        color: white;
+        font-size: 19px;
+        padding-left: 20px;
+        line-height: 140%;
+        
+    }
+  
+}
+
+
+
+.aboutUs {
+    padding-top: 50px;
+    color: #0480b1;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 1px gray solid;
+
+    h1 {
+        border-bottom: 1px solid gray;
+    }
+
+}
+div.aboutUsGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+div.aboutUsGallery figure {
+    flex-basis: 40%;
+    margin: 0rem 0rem;
+}
+
+div.aboutUsGallery figure img {
+    width: 100%
+}
+
+div.aboutUsGallery figcaption {
+    text-align: left;
+    font-size: 22px;
+    font-weight:lighter;
+    color: #0480b1;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+.growthImage {
+    margin-bottom: 0px;
+    
+}
+
+div.lastSection figure img {
+    width: 100%;
+    padding: 5px 5px 0px 5px;
+}
+
+.lastSection p {
+    padding-left: 5px;
+}
+
+div.lastSection figcaption {
+    text-align: left;
+    font-size: 22px;
+    font-weight:lighter;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: #0480b1;
+    padding-left: 5px;
+}
+
+.techSupport{
+    p{
+        padding-bottom: 30px;
+    }
+}
+
+.learnMore {
+    
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    margin: 0px 5px;
+    padding-bottom: 90px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+
+.growthText {
+    font-size: 12px;
+    padding-left: 55px;
+    padding-top: 10px;
+
+}
+
+.growth-btn {
+    
+    width: 75%;
+    height: 40px;
+    background-color: #0480b1;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    
+}
+
+.growth-btn:hover{
+        background: gray;
+    
+}
+
+
+figure p {
+    font-size: 12px;
+    color: gray;
+    
+}
+
+.myphoto {
+    display: block;
+    float: right;
+    width: 50%;
+    padding: 2vw .5rem 5.5vw;
+}
+
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+
+
+/* FOOTER  */
+.brands {
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+#footerWrapper {background-color: #0480b1;}
+footer {
+    
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	background-color: #02456b;
+    background-image: linear-gradient(0deg, #02456b 38%, #0480b1 100%);
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,116 @@
+header, main, #navWrapper, img, .hImage, .aboutUs, .lastSection, .brands, .callNumber {
+    max-width: 53rem;
+    margin: auto;
+}
+
+
+/* NAVIGATION STUFF GOES HERE  
+
+
+/*hero image stuff*/
+
+//end of hero image
+figure.logo {
+    padding-left: 10px;
+}
+
+
+
+// main 
+
+
+main h1 {
+    padding: 1rem 2vw .5rem 1.2vw; 
+}
+
+.theBest{
+    width: 900px;
+    margin-right: 5px;
+
+    h1 {
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+
+    ul {
+        padding-left: 6rem;
+        color: white;
+        line-height: 150%;
+    }
+}
+
+.formula{
+    width: 700px;
+    
+    h1 {
+        padding-right: 10px;
+    }
+
+    h2{
+        color: white;
+        font-size: 19px;
+        padding-right: 10px;
+        line-height: 120%;
+    }
+}
+
+#mainWrapper {
+
+
+
+    
+    h1{
+    padding-left: 0px;
+    }
+    p{
+        padding-left:0;
+    }
+}
+
+
+div.aboutUsGallery{
+    padding-top: 10px;
+}
+
+div.aboutUsGallery figure {
+    flex-basis: 22%;
+    justify-content: space-between;
+    padding-right: 0px;
+}
+
+.lastSection{
+    padding-top: 15px;
+	display: grid;
+    grid-template-columns: 400px 400px 340px;
+    grid-template-rows: 350px 150px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    
+    p {
+        text-align: left;
+    }
+}
+
+.lastSection .figure{
+    width: 100%;
+}
+
+.techSupport {
+
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+
+.brands {
+    width: 53rem;
+}
+
+footer {
+    margin-top: 30px;
+    padding-left: 45px;
+}
+
+
