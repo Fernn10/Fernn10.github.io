@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Timpanogos Indoor: Photos</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <figure class="logo">
+            <img src="images/LetsPlayLogo-assets/LetsPlayLogo1.png" alt="logo"
+              srcset="images/LetsPlayLogo-assets/LetsPlayLogo1.png 1x,
+                      images/LetsPlayLogo-assets/LetsPlayLogo2.png 2x,
+                      images/LetsPlayLogo-assets/LetsPlayLogo3.png 3x">
+            </figure>
+
+        <div>
+         <h1>Timpanogos Indoor Soccer</h1>
+         <h2>Soccer for all ages</h2>
+        </div>
+    </header>
+
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav class="clearfix">
+        <button id="hamburgerBtn">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </button>
+        <ul id="primaryNav" >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="createAccount.html">Create Account</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li class="active"><a href="photos.html">Photos</a>
+            </li>  
+            <li class="parent"><a href="#">Facility Info</a>                
+                <ul>
+                <li><a href="#">Rule Book</a></li>
+                <li class="active"><a href="#">Daily Schedule</a></li>
+                <li><a href="#">Map</a></li>
+            </ul></li> 
+            <li><a href="#">Leagues</a></li>  
+        </ul>
+    </nav>
+</div>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Photos</h1>
+        <h2>Enjoy some photos from our gallery</h2>
+        <section class="theGallery">
+            
+            <figure><img alt="car" class="lazy" src="#" data-src="images/lazyLoad1.jpg"></figure>
+            <figure><img alt="car" class="lazy" src="#" data-src="images/lazyLoad2.jpg"></figure>
+            <figure><img alt="car" class="lazy" src="#" data-src="images/lazyLoad3.jpg"></figure>
+            <figure><img alt="car" class="lazy" src="#" data-src="images/lazyLoad4.jpg"></figure>
+            <figure><img alt="car" class="lazy" src="#" data-src="images/lazyLoad5.jpg"></figure>
+
+        </section>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2022 &bull; Anferny Mendoza &bull; 123-555-6789
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+     var lazyLoadInstance = new LazyLoad({
+         elements_selector: ".lazy"
+ 
+ });
+    </script>
+</body>
+</html>

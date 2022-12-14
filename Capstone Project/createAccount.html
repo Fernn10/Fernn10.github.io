@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Timpanogos Indoor: Create Account</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <figure class="logo">
+            <img src="images/LetsPlayLogo-assets/LetsPlayLogo1.png" alt="logo"
+              srcset="images/LetsPlayLogo-assets/LetsPlayLogo1.png 1x,
+                      images/LetsPlayLogo-assets/LetsPlayLogo2.png 2x,
+                      images/LetsPlayLogo-assets/LetsPlayLogo3.png 3x">
+            </figure>
+
+        <div>
+         <h1>Timpanogos Indoor Soccer</h1>
+         <h2>Soccer for all ages</h2>
+        </div>
+    </header>
+
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav class="clearfix">
+        <button id="hamburgerBtn">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </button>
+        <ul id="primaryNav" >
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="createAccount.html">Create Account</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="photos.html">Photos</a>
+            </li>  
+            <li class="parent"><a href="#">Facility Info</a>                <ul>
+                <li><a href="#">Rule Book</a></li>
+                <li class="active"><a href="#">Daily Schedule</a></li>
+                <li><a href="#">Map</a></li>
+            </ul></li> 
+            <li><a href="#">Leagues</a></li>  
+        </ul>
+    </nav>
+</div>
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Create an account</h1>
+        <form method="get" action="thankYou.html">
+            <fieldset>
+                <legend>Player Information</legend>
+                <label class="top"> Full Name* <input type="text" name="fname" required></label>
+                <label class="top"> Phone* <input type="tel" name="phone" required></label>
+                <label class="top"> Birthday* <input type="date" name="birthDate" required></label>
+                <div>Gender</div>
+                <label class="sbs"><input type="radio" name="gender" value="male"> Male</label>
+                <label class="sbs"><input type="radio" name="gender" value="female"> Female</label>
+                <label class="sbs"><input type="radio" name="gender" value="other"> Other</label>
+                <label class="top"> Email* <input type="email" name="email" required></label>
+                <label class="top"> Password* <input type="password" name="email" required></label>
+                <label class="top"> Repeat Password* <input type="password" name="email" required></label>
+                
+
+            </fieldset>
+
+
+
+            <input type="submit" value="Create My Account" class="submitBtn">
+
+       </form>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2022 &bull; Anferny Mendoza &bull; 123-555-6789
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

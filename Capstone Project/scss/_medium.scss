@@ -1,0 +1,80 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav button {display: none;}
+
+nav {
+background-color: #4169e1;
+    ul {
+        display: flex;
+        margin-left: 2%;
+        border-left: 1px solid rgba(255,255,255,0.1);
+    }
+    ul li {
+        
+        border-right: 1px solid rgba(255,255,255,0.1);
+    }
+
+    ul li a {
+        
+        display: block;
+        font-size: 1rem;
+        padding: .9rem 1.2rem;
+        color: rgba(255,255,255,1);
+        text-decoration: none;
+//transition
+        -webkit-transition: background 0.3s linear;
+        transition: background 0.3s linear;
+    }
+    ul li a:hover {background: rgba(97, 97, 97, 0.5);}
+
+    #primaryNav li.parent > a:after {
+        content: "\25BC";
+        font-size: .65rem;
+        color: rgba(255,255,255,0.5);
+        float: left;
+        padding-right: 10px;
+    }
+
+    ul li ul {
+        display: flex;
+        flex-direction: column;
+        background-color: darken(#4169e1,5%);
+        border: none;
+        width: 14rem;
+        position: absolute;
+        left: -999rem;
+        z-index: 99;
+    }
+
+    ul li ul li {
+        border-right: none;
+        border-top: solid 1px rgba(0,0,0,0.2) ;
+    }
+
+    ul li:hover ul {
+        left: auto;
+        margin-left: 0;
+    }
+
+    li.active a {background-color: rgba(0, 0, 0, 0.25)}
+
+}// end nav
+
+/*----------- MAIN --------------*/
+main {
+    .card{flex-basis: 48%;}
+}
+
+
+/*----------- FOOTER --------------*/
+    

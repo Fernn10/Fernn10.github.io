@@ -1,0 +1,43 @@
+header, nav, main, body, footer, .swiper-slide, p {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li a {
+        font-size: 1.2rem;
+        padding: .5rem 1.2rem;
+    }
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
+main h1 {
+        padding: 1rem 2vw .5rem 1.2vw; 
+    }
+
+    main {
+        .card{flex-basis: 46.33%;
+
+        
+        }
+
+        .card-deck {
+                padding-left: 30px;
+                align-items: center;
+            } 
+        
+        
+    }
